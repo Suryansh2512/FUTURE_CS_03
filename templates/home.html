@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure File Share</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            margin-bottom: 2rem;
+        }
+        a {
+            text-decoration: none;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            background-color: #41008b;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Secure File Sharing System by Suryansh</h1>
+    <a href="{{ url_for('upload_file') }}">Upload File</a>
+
+    <a href="{{ url_for('download_file') }}">Download File</a>
+</body>
+</html>
